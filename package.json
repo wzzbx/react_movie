@@ -1,0 +1,34 @@
+{
+  "name": "reactmoviedatabase",
+  "version": "1.0.0",
+  "description": "Your own movie database",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wzzbx"
+  },
+  "engines": {
+    "node": "7.4.0"
+  },
+  "author": "Nikola Brajnov",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "debug": "^2.6.0",
+    "express": "^4.14.0",
+    "express-jwt": "^5.1.0",
+    "jsonwebtoken": "^7.2.1",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.7.3",
+    "passport": "^0.3.2",
+    "passport-google-oauth20": "^1.0.0",
+    "path": "^0.12.7",
+    "validator": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
