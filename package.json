@@ -4,7 +4,9 @@
   "description": "Your own movie database",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    
+
   },
   "repository": {
     "type": "git",
