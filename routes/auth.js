@@ -33,7 +33,7 @@ router.get('/google/callback', (req, res, next) => {
         .json({success: false, message: 'Could not login.'}); 
     }
 
-       res.redirect('https://evening-river-26102.herokuapp.com/?token=#'+token+'?user='+profile.emails[0].value);
+       res.redirect('https://evening-river-26102.herokuapp.com/?token=#'+token+'?user='+profile.emails[0].value);     
   
 		
    
