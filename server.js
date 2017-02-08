@@ -5,15 +5,13 @@ const configDB = require('./config/database');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
-
+const os = require('os');
 
 // mongoose.connect(configDB.url);
-uri = 'mongodb://nbrajnov84:sorrow12345@ds145669.mlab.com:45669/moviesdatabase';
-mongoose.connect(uri);
-
 const app = express();
 app.use(cors());
-
+uri = 'mongodb://nbrajnov84:sorrow12345@ds145669.mlab.com:45669/moviesdatabase';
+mongoose.connect(uri);
 
 const webpack = require('webpack')
 const webpackDevMiddleware = require('webpack-dev-middleware')
@@ -26,11 +24,7 @@ noInfo: true,
 publicPath: config.output.path
 }))
  
-
-
-
 app.use(express.static('./client'));
-
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
