@@ -28654,7 +28654,7 @@
 	        value: function getUsers() {
 
 	            var that = this;
-	            _axios2.default.get('https://localhost:3000/api/users').then(function (response) {
+	            _axios2.default.get('https://localhost:5000/api/users').then(function (response) {
 	                var users = (0, _assign2.default)({}, response.data);
 	                users = (0, _keys2.default)(users).map(function (key) {
 	                    return users[key];
@@ -30470,7 +30470,7 @@
 	        value: function deleteMovie(event) {
 	            var email = this.state.email;
 
-	            _axios2.default.get('https://localhost:3000/api/user/' + email + '/deletemovie/' + event.target.value).then(function (response) {}).catch(function (error) {
+	            _axios2.default.get('https://localhost:5000/api/user/' + email + '/deletemovie/' + event.target.value).then(function (response) {}).catch(function (error) {
 	                console.log(error);
 	            });
 	            this.getMovies(email);
@@ -32670,7 +32670,7 @@
 	        value: function onSubmit(event) {
 	            event.preventDefault();
 
-	            _axios2.default.post('https://localhost:3000/api/user/' + this.props.email + '/createmovie', _querystring2.default.stringify({ title: this.refs.title.value, released: this.refs.released.value, url: this.refs.url.value })).then(function (response) {
+	            _axios2.default.post('https://localhost:5000/api/user/' + this.props.email + '/createmovie', _querystring2.default.stringify({ title: this.refs.title.value, released: this.refs.released.value, url: this.refs.url.value })).then(function (response) {
 	                console.log(response);
 	            }).catch(function (error) {
 	                console.log(error);
@@ -32846,7 +32846,7 @@
 	        value: function onSubmit(event) {
 
 	            event.preventDefault();
-	            _axios2.default.post('https://localhost:3000/api/user/updatemovie/' + this.state.movieId, _querystring2.default.stringify({ title: this.refs.title.value, released: this.refs.released.value, url: this.refs.url.value })).then(function (response) {}).catch(function (error) {
+	            _axios2.default.post('https://localhost:5000/api/user/updatemovie/' + this.state.movieId, _querystring2.default.stringify({ title: this.refs.title.value, released: this.refs.released.value, url: this.refs.url.value })).then(function (response) {}).catch(function (error) {
 	                console.log(error);
 	            });
 	            this.props.getMovies(this.props.email);
