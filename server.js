@@ -50,7 +50,7 @@ app.use('/auth', authRoutes);
 app.use('/api', apiRoutes);
 
 // start the server
-const port = 3000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log('Server is running on http://localhost:' + port + ' or http://127.0.0.1:' + port);
 });
