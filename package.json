@@ -4,7 +4,7 @@
   "description": "Your own movie database",
   "main": "server.js",
   "scripts": {
-    "start": "npm run server",
+    "start": "node server.js",
     "server": "node server.js ",
     "webpack": "webpack --watch"
   },
