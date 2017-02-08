@@ -22,7 +22,7 @@ class EditModal extends Component {
       
         event.preventDefault()
         axios
-            .post('http://localhost:3000/api/user/updatemovie/' + this.state.movieId, qs.stringify({title: this.refs.title.value, released: this.refs.released.value, url: this.refs.url.value}))
+            .post('https://localhost:3000/api/user/updatemovie/' + this.state.movieId, qs.stringify({title: this.refs.title.value, released: this.refs.released.value, url: this.refs.url.value}))
             .then(function (response) {})
             .catch(function (error) {
                 console.log(error)

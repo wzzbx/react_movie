@@ -52,7 +52,7 @@ class Users extends Component {
 
         let that = this;
         axios
-            .get('http://localhost:3000/api/users')
+            .get('https://localhost:3000/api/users')
             .then(function (response) {
                 let users = Object.assign({}, response.data);
                 users = Object
