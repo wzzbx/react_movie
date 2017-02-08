@@ -23,7 +23,7 @@ router.get('/users', (req, res) => {
 router.get('/user/:email/movies', (req, res) => {
 	User
 		.findOne({
-			email: req.params.email
+			email: req.params.email 
 		})
 		.exec(function (err, user) {
 			if (err)
