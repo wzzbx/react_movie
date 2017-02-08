@@ -25,7 +25,7 @@ class NavBar extends Component {
                                 )
                                 : (
                                     <li>
-                                        <a href="http://127.0.0.1:3000/auth/google">
+                                        <a href="https://evening-river-26102.herokuapp.com/auth/google">
                                             <span className="glyphicon glyphicon-log-in"></span> Login
                                         </a>
                                     </li>
