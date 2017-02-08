@@ -26540,13 +26540,13 @@
 	  value: true
 	});
 
-	var _base = __webpack_require__(234);
+	var _Base = __webpack_require__(234);
 
-	var _base2 = _interopRequireDefault(_base);
+	var _Base2 = _interopRequireDefault(_Base);
 
-	var _homepage = __webpack_require__(324);
+	var _Homepage = __webpack_require__(324);
 
-	var _homepage2 = _interopRequireDefault(_homepage);
+	var _Homepage2 = _interopRequireDefault(_Homepage);
 
 	var _Auth = __webpack_require__(321);
 
@@ -26556,7 +26556,7 @@
 
 	var routes = {
 
-	  component: _base2.default,
+	  component: _Base2.default,
 	  childRoutes: [{
 
 	    path: '/',
@@ -26565,10 +26565,10 @@
 
 	      if (_Auth2.default.isUserAuthenticated()) {
 
-	        cb(null, _homepage2.default);
+	        cb(null, _Homepage2.default);
 	      } else {
 	        // u slucaju da zelimo neku drugu landing componentu
-	        cb(null, _homepage2.default);
+	        cb(null, _Homepage2.default);
 	      }
 	    }
 
@@ -28497,9 +28497,9 @@
 
 	var _reactRouter = __webpack_require__(178);
 
-	var _users = __webpack_require__(325);
+	var _Users = __webpack_require__(325);
 
-	var _users2 = _interopRequireDefault(_users);
+	var _Users2 = _interopRequireDefault(_Users);
 
 	var _axios = __webpack_require__(334);
 
@@ -28537,7 +28537,7 @@
 	                        _react2.default.createElement(
 	                            'div',
 	                            { className: 'full-width-div' },
-	                            _react2.default.createElement(_users2.default, null)
+	                            _react2.default.createElement(_Users2.default, null)
 	                        )
 	                    )
 	                )
@@ -28631,8 +28631,8 @@
 	    }
 
 	    (0, _createClass3.default)(Users, [{
-	        key: 'componentWillMount',
-	        value: function componentWillMount() {
+	        key: 'componentDidMount',
+	        value: function componentDidMount() {
 	            this.getUsers();
 	        }
 	    }, {
@@ -28693,7 +28693,7 @@
 	                    _react2.default.createElement(
 	                        'div',
 	                        { className: 'list-group' },
-	                        this.state.searchList.map(function (user, i) {
+	                        this.state.searchList.map(function (user) {
 	                            var _React$createElement;
 
 	                            return _react2.default.createElement(
@@ -28706,7 +28706,7 @@
 	                                        marginTop: 8 + 'px',
 	                                        marginRigh: 2 + 'px'
 	                                    },
-	                                    key: i,
+	                                    key: user._id,
 	                                    type: 'button'
 	                                }, (0, _defineProperty3.default)(_React$createElement, 'className', 'list-group-item'), (0, _defineProperty3.default)(_React$createElement, 'value', user.email), (0, _defineProperty3.default)(_React$createElement, 'onClick', _this2.setUserEmail), _React$createElement),
 	                                user.name,
@@ -30501,7 +30501,7 @@
 
 	            return _react2.default.createElement(
 	                'div',
-	                { className: 'col-sm-8' },
+	                { className: 'col-sm-8', style: { marginTop: 7 + 'px' } },
 	                _react2.default.createElement(
 	                    'button',
 	                    {

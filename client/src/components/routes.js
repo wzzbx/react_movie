@@ -1,5 +1,5 @@
-import Base from './base.jsx';
-import HomePage from './homepage.jsx';
+import Base from './Base.jsx';
+import HomePage from './Homepage.jsx';
 import Auth from '../auth/Auth.js';
 
 const routes = {

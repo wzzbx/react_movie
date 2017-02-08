@@ -121,7 +121,7 @@ class ListUserMovies extends Component {
     
     render() {
         return (
-            <div className="col-sm-8">
+            <div className="col-sm-8" style= {{marginTop: 7 + 'px'}}>
          
                 <button
                    className= {this.state.isDisabled===true  ? 'btn btn-primary disabled' : 'btn btn-primary'}  
