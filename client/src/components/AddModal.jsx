@@ -14,7 +14,7 @@ class AddModal extends Component {
         event.preventDefault()
 
         axios
-            .post('https://localhost:5000/api/user/' + this.props.email + '/createmovie', qs.stringify({title: this.refs.title.value, released: this.refs.released.value, url: this.refs.url.value}))
+            .post('https://evening-river-26102.herokuapp.com/api/user/' + this.props.email + '/createmovie', qs.stringify({title: this.refs.title.value, released: this.refs.released.value, url: this.refs.url.value}))
             .then(function (response) {
                 console.log(response);
             })

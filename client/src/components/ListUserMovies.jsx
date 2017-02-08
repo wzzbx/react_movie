@@ -64,7 +64,7 @@ class ListUserMovies extends Component {
         let that = this;
       
         axios
-            .get('https://localhost:3000/api/user/' + email + '/movies')
+            .get('https://evening-river-26102.herokuapp.com/api/user/' + email + '/movies')
             .then(function (response) {
 
                 let movies = Object.assign({}, response.data);
@@ -92,7 +92,7 @@ class ListUserMovies extends Component {
         let email = this.state.email;
       
         axios
-            .get('https://localhost:5000/api/user/' + email + '/deletemovie/' + event.target.value)
+            .get('https://evening-river-26102.herokuapp.com/api/user/' + email + '/deletemovie/' + event.target.value)
             .then(function (response) {
                
             })
