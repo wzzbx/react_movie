@@ -26,7 +26,7 @@ router.get('/google', passport.authenticate('google', {scope: ['email profile']}
 router.get('/google/callback', (req, res, next) => {
 
    passport.authenticate('google', (err, token, profile) => {
-     
+    
     if (err) {
       return res
         .status(400)
