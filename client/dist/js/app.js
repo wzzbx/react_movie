@@ -28445,7 +28445,7 @@
 	                                null,
 	                                _react2.default.createElement(
 	                                    'a',
-	                                    { href: 'https://evening-river-26102.herokuapp.com/auth/google' },
+	                                    { href: 'http://localhost:3000/auth/google' },
 	                                    _react2.default.createElement('span', { className: 'glyphicon glyphicon-log-in' }),
 	                                    ' Login'
 	                                )
