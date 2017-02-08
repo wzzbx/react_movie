@@ -65,7 +65,6 @@
     "image-webpack-loader": "^3.2.0",
     "jshint": "^2.9.4",
     "nodemon": "^1.11.0",
-    
     "webpack-dev-middleware": "^1.10.0",
     "webpack-dev-server": "^1.14.0"
   }
